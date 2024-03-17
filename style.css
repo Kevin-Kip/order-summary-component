@@ -27,6 +27,13 @@ body {
     background-repeat: repeat-x;
 }
 
+@media only screen and (max-width: 600px) {
+    body {
+        background-image: url("images/pattern-background-mobile.svg");
+        background-repeat: repeat-x;
+    }
+}
+
 p {
     font-size: 16px;
 }
@@ -63,22 +70,29 @@ p {
     border-radius: 7px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: -webkit-fill-available;
     height: min-content;
     margin: 20px 40px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 15px;
 }
 
 .order-details-card img {
     height: 35px;
 }
 
+.order-details-image-and-plan {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .order-details-card-plan {
     display: flex;
     flex-direction: column;
+    margin-left: 10px;
 }
 
 .order-details-card-plan p {
@@ -88,6 +102,11 @@ p {
 
 .order-details-card-plan p:first-of-type {
     font-weight: var(--deepBold);
+}
+
+.order-details-card-plan p:nth-child(2) {
+    font-weight: var(--semiBold);
+    color: var(--desaturatedBlue);
 }
 
 .proceed-button {
@@ -100,6 +119,7 @@ p {
     margin-bottom: 5px;
     margin-left: 40px;
     margin-right: 40px;
+    cursor: pointer;
 }
 
 .cancel-button {
@@ -110,6 +130,7 @@ p {
     margin-bottom: 25px;
     margin-top: 5px;
     background: transparent;
+    cursor: pointer;
 }
 
 .attribution {
