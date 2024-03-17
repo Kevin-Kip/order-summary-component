@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --primaryPaleBlue: hsl(225, 100%, 94%);
+    --primaryBrightBlue: hsl(245, 75%, 52%);
+    --paleBlue: hsl(225, 100%, 98%);
+    --desaturatedBlue: hsl(224, 23%, 55%);
+    --darkBlue: hsl(223, 47%, 23%);
+    --semiBold: 500;
+    --veryBold: 700;
+    --deepBold: 900;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    font-family: 'Red Hat Display', serif;
+}
+
+body {
+    height: 100%;
+    background-color: var(--primaryPaleBlue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("images/pattern-background-desktop.svg");
+    background-repeat: repeat-x;
+}
+
+p {
+    font-size: 16px;
+}
+
+.order-summary-card {
+    background-color: whitesmoke;
+    border-radius: 15px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.order-top-illustration-parent img {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.order-summary-title {
+    width: 100%;
+    font-weight: var(--deepBold);
+    text-align: center;
+    margin: 20px 1px;
+}
+
+.order-summary-supporting-text {
+    font-weight: normal;
+    text-align: center;
+    margin: 1px 50px;
+}
+
+.order-details-card {
+    background-color: var(--paleBlue);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: -webkit-fill-available;
+    height: min-content;
+    margin: 20px 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.order-details-card img {
+    height: 35px;
+}
+
+.order-details-card-plan {
+    display: flex;
+    flex-direction: column;
+}
+
+.order-details-card-plan p {
+    padding: unset;
+    margin: unset;
+}
+
+.order-details-card-plan p:first-of-type {
+    font-weight: var(--deepBold);
+}
+
+.proceed-button {
+    background-color: var(--primaryBrightBlue);
+    font-weight: var(--veryBold);
+    color: white;
+    padding: 15px 30px;
+    border: unset;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.cancel-button {
+    border: unset;
+    font-weight: var(--veryBold);
+    color: var(--desaturatedBlue);
+    padding: 10px;
+    margin-bottom: 25px;
+    margin-top: 5px;
+    background: transparent;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
